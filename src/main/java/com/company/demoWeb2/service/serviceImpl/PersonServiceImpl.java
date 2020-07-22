@@ -9,12 +9,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class PersonServiceImpl implements PersonService {
 
-    @Autowired
-    private PersonDao personDao;
+//    @Autowired
+//    private PersonDao personDao;
 
     @Override
     public Person getPerson() {
-        Person person = personDao.getPerson();
+        Person person = new Person();
+        person.setName("bb");
+//        Person person = personDao.getPerson();
         return person;
     }
 }
