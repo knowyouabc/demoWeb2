@@ -1,6 +1,5 @@
 package com.company.demoWeb2.config;
 
-import com.company.demoWeb2.config.MyConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
