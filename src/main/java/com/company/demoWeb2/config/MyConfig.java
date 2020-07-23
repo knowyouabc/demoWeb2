@@ -6,6 +6,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"com.company.demoWeb2"})
+@ComponentScan(basePackages = {"com.company.demoWeb2.controller"})
 public class MyConfig {
 }
