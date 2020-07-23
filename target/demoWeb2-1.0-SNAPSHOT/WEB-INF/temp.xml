@@ -37,4 +37,13 @@
         <url-pattern>/myServlet</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>myFilter2</filter-name>
+        <filter-class>com.company.demoWeb2.filter.MyFilter2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>myFilter2</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
 </web-app>

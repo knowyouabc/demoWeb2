@@ -1,6 +1,6 @@
 
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ãú¨8óã¯·.
-tsquid:UselessImportCheck"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8óã¯·.
 squid:UselessImportCheck"QRemove this unused import 'org.springframework.web.bind.annotation.ResponseBody'.(•¶¶êøÿÿÿÿ8óã¯·.
-csquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ó·–18óã¯·.
+tsquid:UselessImportCheck"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8óã¯·.
 dsquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(˜´ ­8óã¯·.
+csquid:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ó·–18óã¯·.
