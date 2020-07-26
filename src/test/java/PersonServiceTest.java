@@ -1,4 +1,3 @@
-import com.company.demoWeb2.entity.Person;
 import com.company.demoWeb2.service.PersonService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,7 +8,7 @@ import javax.annotation.Resource;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:appconfig.xml")
+@ContextConfiguration(locations = "classpath:aop/appconfig.xml")
 public class PersonServiceTest {
 
     @Resource

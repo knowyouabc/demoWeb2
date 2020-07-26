@@ -23,7 +23,7 @@
     <!--</listener>-->
     <!--<context-param>-->
         <!--<param-name>contextConfigLocation</param-name>-->
-        <!--<param-value>classpath:appconfig.xml</param-value>-->
+        <!--<param-value>classpath:redis/redis-config.xml</param-value>-->
     <!--</context-param>-->
 
 
