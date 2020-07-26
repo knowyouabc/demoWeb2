@@ -68,5 +68,9 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.12.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-oxm:4.2.6.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:druid:1.1.8" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.19" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-dbutils:commons-dbutils:1.6" level="project" />
   </component>
 </module>

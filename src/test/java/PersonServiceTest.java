@@ -5,6 +5,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.sql.SQLException;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -15,7 +16,7 @@ public class PersonServiceTest {
     private PersonService personService;
 
     @Test
-    public void getPerson() {
+    public void getPerson() throws SQLException {
         personService.getPerson();
     }
 }

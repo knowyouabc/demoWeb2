@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.SQLException;
+
 @RestController
 @RequestMapping(value = "app")
 public class PersonController {
@@ -18,7 +20,7 @@ public class PersonController {
     private PersonService personService;
 
     @RequestMapping(value = "getPerson", method = RequestMethod.GET)
-    public Person getPerson() {
+    public Person getPerson() throws SQLException {
         return personService.getPerson();
     }
 

@@ -11,6 +11,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.company.demoWeb2"})
 @EnableAspectJAutoProxy
-@ImportResource(locations = "classpath:redis/redis-config.xml")
+@ImportResource(locations = {"classpath:mysql/mysql-config.xml","classpath:redis/redis-config.xml"})
 public class MyConfig {
 }
