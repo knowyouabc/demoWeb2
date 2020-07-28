@@ -15,6 +15,15 @@
 
 	<!--<context:property-placeholder location="classpath:redis/redis.properties" />-->
 
+	<!--<bean id="propertyConfigurer"-->
+		  <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+		<!--<property name="locations">-->
+			<!--<list>-->
+				<!--<value>classpath:redis/redis.properties</value>-->
+			<!--</list>-->
+		<!--</property>-->
+	<!--</bean>-->
+
 	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
 		<!--最大空闲数-->
 		<property name="maxIdle" value="${redis.maxIdle}" />

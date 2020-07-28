@@ -200,5 +200,16 @@
                 <!--</configuration>-->
             <!--</plugin>-->
         </plugins>
+
+            <!--将src/main/resources中的配置文件编译到test-classes目录中-->
+            <!--${project.basedir}在pom文件中表示项目根目录-->
+            <testResources>
+                <testResource>
+                    <directory>${project.basedir}/src/test/resources</directory>
+                </testResource>
+                <testResource>
+                    <directory>${project.basedir}/src/main/resources</directory>
+                </testResource>
+            </testResources>
     </build>
 </project>
