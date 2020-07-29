@@ -213,4 +213,17 @@
             </testResource>
         </testResources>
     </build>
+
+    <profiles>
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <jdbc.username>test</jdbc.username>
+                <jdbc.password>test</jdbc.password>
+            </properties>
+        </profile>
+    </profiles>
 </project>
