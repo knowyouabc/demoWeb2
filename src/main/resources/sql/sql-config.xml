@@ -49,7 +49,7 @@
 
 	<!--扫描mapper所在的包 为mapper创建实现类-->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.company.demoWeb2.mapper"></property>
+		<property name="basePackage" value="com.company.demoWeb2.mapper" />
 	</bean>
 
 

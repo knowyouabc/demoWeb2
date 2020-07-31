@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface PersonMapper {
 
-    public List<Person> findAll() throws IOException;
+    List<Person> findAll();
 
 }

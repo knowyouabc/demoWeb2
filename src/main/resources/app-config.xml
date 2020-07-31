@@ -19,8 +19,7 @@
     </context:component-scan>
 
     <context:property-placeholder location="classpath:*/*.properties" />
-    <import resource="classpath:mysql/mysql-config.xml" />
+    <import resource="classpath:sql/sql-config.xml" />
     <import resource="classpath:redis/redis-config.xml" />
     <import resource="classpath:aop/aop-config.xml" />
-    <import resource="classpath:mybetis/mybetis-config.xml" />
 </beans>
