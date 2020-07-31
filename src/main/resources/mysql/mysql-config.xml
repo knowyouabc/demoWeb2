@@ -40,4 +40,34 @@
 	</bean>
 
 	<!--<import resource="classpath:redis/redis-config.xml" />-->
+
+	<!--配置mybatis工厂-->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" >
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="mybetis/mybetis-config.xml"/>
+	</bean>
+
+	<!--扫描mapper所在的包 为mapper创建实现类-->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.company.demoWeb2.mapper"></property>
+	</bean>
+
+
+	<!--&lt;!&ndash;声明式事务控制&ndash;&gt;-->
+	<!--&lt;!&ndash;平台事务管理器&ndash;&gt;-->
+	<!--<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+		<!--<property name="dataSource" ref="dataSource"></property>-->
+	<!--</bean>-->
+
+	<!--&lt;!&ndash;配置事务增强&ndash;&gt;-->
+	<!--<tx:advice id="txAdvice">-->
+		<!--<tx:attributes>-->
+			<!--<tx:method name="*"/>-->
+		<!--</tx:attributes>-->
+	<!--</tx:advice>-->
+
+	<!--&lt;!&ndash;事务的aop织入&ndash;&gt;-->
+	<!--<aop:config>-->
+		<!--<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.itheima.service.impl.*.*(..))"></aop:advisor>-->
+	<!--</aop:config>-->
 </beans>
