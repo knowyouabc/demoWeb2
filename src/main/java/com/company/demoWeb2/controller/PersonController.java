@@ -1,6 +1,7 @@
 package com.company.demoWeb2.controller;
 
 
+import com.company.demoWeb2.common.vo.PersonVO;
 import com.company.demoWeb2.entity.Person;
 import com.company.demoWeb2.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class PersonController {
     private PersonService personService;
 
     @RequestMapping(value = "getPerson", method = RequestMethod.GET)
-    public Person getPerson() throws SQLException {
+    public PersonVO getPerson() throws SQLException {
         return personService.getPerson();
     }
 

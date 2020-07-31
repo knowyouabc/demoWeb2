@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 //@ContextConfiguration(classes = MyConfig.class)
-@ContextConfiguration(locations = {"classpath:app-config.xml"})
+@ContextConfiguration(locations = {"classpath:spring-config.xml"})
 @WebAppConfiguration
 public class PersonServiceTest {
 

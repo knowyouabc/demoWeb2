@@ -1,6 +1,6 @@
 package com.company.demoWeb2.entity;
 
-public class Person  {
+public class Person {
 
     private Integer id;
 

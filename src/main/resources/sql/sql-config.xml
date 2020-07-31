@@ -44,7 +44,7 @@
 	<!--配置mybatis工厂-->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" >
 		<property name="dataSource" ref="dataSource"/>
-		<property name="configLocation" value="mybetis/mybetis-config.xml"/>
+		<property name="configLocation" value="classpath:mybetis/mybetis-config.xml"/>
 	</bean>
 
 	<!--扫描mapper所在的包 为mapper创建实现类-->
