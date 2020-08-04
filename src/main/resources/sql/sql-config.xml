@@ -39,12 +39,15 @@
 		<constructor-arg name="ds" ref="dataSource"></constructor-arg>
 	</bean>
 
-	<!--<import resource="classpath:redis/redis-config.xml" />-->
-
 	<!--配置mybatis工厂-->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" >
 		<property name="dataSource" ref="dataSource"/>
 		<property name="configLocation" value="classpath:mybetis/mybetis-config.xml"/>
+		<property name="mapperLocations">
+			<list>
+				<value>classpath:**/mapper/*Mapper.xml</value>
+			</list>
+		</property>
 	</bean>
 
 	<!--扫描mapper所在的包 为mapper创建实现类-->
@@ -52,6 +55,8 @@
 		<property name="basePackage" value="com.company.demoWeb2.mapper" />
 	</bean>
 
+
+    <!--<import resource="classpath:redis/redis-config.xml" />-->
 
 	<!--&lt;!&ndash;声明式事务控制&ndash;&gt;-->
 	<!--&lt;!&ndash;平台事务管理器&ndash;&gt;-->

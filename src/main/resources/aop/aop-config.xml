@@ -20,7 +20,9 @@
 			<aop:around method="aroundProxyMethod" pointcut-ref="pt" />
 		</aop:aspect>
 	</aop:config>
-	<context:component-scan base-package="com.company.demoWeb2.service,com.company.demoWeb2.dao"/>
+
 
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+	<!--<context:component-scan base-package="com.company.demoWeb2.service,com.company.demoWeb2.dao"/>-->
 </beans>

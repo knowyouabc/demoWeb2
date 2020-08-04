@@ -7,9 +7,9 @@
         <typeAlias type="com.company.demoWeb2.entity.Person" alias="person"/>
     </typeAliases>
 
-    <!--加载映射文件-->
-    <mappers>
-        <mapper resource="mybetis/mapper/PersonMapper.xml"/>
-    </mappers>
+    <!--加载映射文件,无法使用通配符-->
+    <!--<mappers>-->
+        <!--<mapper resource="com/company/demoWeb2/mapper/PersonMapper.xml"/>-->
+    <!--</mappers>-->
 
 </configuration>

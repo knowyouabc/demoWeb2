@@ -234,6 +234,21 @@
                 <directory>${project.basedir}/src/main/resources</directory>
             </testResource>
         </testResources>
+
+        <!--idea默认编译时添加resources目录下的文件，而丢弃java目录下的配置文件，以下代码可以将java目录中的xml一起编辑打到包里-->
+        <resources>
+            <resource>
+                <filtering>false</filtering>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <filtering>false</filtering>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
     </build>
 
     <profiles>
