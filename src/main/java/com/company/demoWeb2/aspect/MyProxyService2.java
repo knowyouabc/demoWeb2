@@ -21,6 +21,7 @@ public class MyProxyService2 {
             System.out.println("后置通知");
         } catch (Throwable throwable) {
             System.out.println("异常通知");
+            throwable.printStackTrace();
         } finally {
             System.out.println("最终通知");
         }

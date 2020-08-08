@@ -34,6 +34,7 @@ public class PersonDaoImpl implements PersonDao{
         List<Person> personList = new ArrayList<>();
 //        personList = queryRunner.query(sql, new BeanListHandler<Person>(Person.class));
         personList = personMapper.findAll();
+        System.out.println("查询到数据库数据："+personList.size());
         return orikaBeanMapper.convertList(personList, PersonVO.class);
     }
 }
