@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.company.demoWeb2.controller"})
 @ImportResource(locations = {"classpath:spring-config.xml"})
+@Import(ExecutorConfiguration.class)
 //@ComponentScan(basePackages = {"com.company.demoWeb2"},
 //        excludeFilters={@ComponentScan.Filter(type=FilterType.ANNOTATION,value={Controller.class})})
 //@EnableAspectJAutoProxy

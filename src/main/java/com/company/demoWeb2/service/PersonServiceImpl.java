@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 @Service
 public class PersonServiceImpl implements PersonService {
@@ -26,15 +27,20 @@ public class PersonServiceImpl implements PersonService {
     @Autowired
     private RedisUtil redisUtil;
 
-    @Override
-    public PersonVO getPerson() throws SQLException {
-        List<PersonVO> personVOList = new ArrayList<>();
+    @Autowired
+    private ThreadService threadService;
 
-        personVOList = personDao.getPersonList();
+    @Override
+    public PersonVO getPerson() throws SQLException, ExecutionException, InterruptedException {
+//        personVOList = personDao.getPersonList();
 
 //        redisUtil.set("person", personVOList.get(0));
 //        redisUtil.get("person");
 
+//        threadService.runThread();
+
+        List<PersonVO> personVOList = new ArrayList<>();
+        personVOList.add(new PersonVO());
         return personVOList.get(0);
     }
 

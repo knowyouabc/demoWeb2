@@ -7,6 +7,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import javax.annotation.Resource;
 import java.sql.SQLException;
+import java.util.concurrent.ExecutionException;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -19,7 +20,7 @@ public class PersonServiceTest {
     private PersonService personService;
 
     @Test
-    public void getPerson() throws SQLException {
+    public void getPerson() throws SQLException, ExecutionException, InterruptedException {
         personService.getPerson();
     }
 }
